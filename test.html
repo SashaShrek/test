@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="React/react.dev.js"></script>
+        <script type="text/javascript" src="React/react-dom.dev.js"></script>
+        <script type="text/javascript" src="React/babel.js"></script>
+        <script type="text/javascript" src="jQuery/jQuery.js"></script>
+        <link rel="stylesheet" href="Style/test.css">
+    </head>
+    <body onload="new Loader().Load()">
+        <div id="root"></div>
+        <script type="text/babel">
+            class Main extends React.Component{//класс мэйн
+                Create(){//метод создания элементов на странице
+                    const mdiv = <div className="mdiv">
+                            <p><input type="text" placeholder="Поиск"/></p>
+                            <p><button>Искать</button></p>
+                        </div>;
+                    return <main>{mdiv}</main>
+                }
+                render(){
+                    return this.Create();
+                }
+            }
+            ReactDOM.render(//отображение созданных элементов в классе мэйн
+                <div><Main/></div>,
+                document.getElementById("root")
+            )
+        </script>
+        <script type="text/javascript" src="Script/test.js"></script>
+    </body>
+</html>

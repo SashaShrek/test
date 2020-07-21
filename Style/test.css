@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+main{
+    width: inherit;
+}
+.mdiv{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.mdiv > p > input{
+    font-size: 120%;
+    font-style: italic;
+    padding: 1%;
+    outline: none;
+    border-radius: 15px;
+    border: solid 1px dimgray;
+}
+.mdiv > p > button{
+    font-size: 110%;
+    border-radius: 15px;
+    border: solid 1px dimgray;
+    outline: none;
+    cursor: pointer;
+}
